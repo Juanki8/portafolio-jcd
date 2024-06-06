@@ -4,7 +4,7 @@ export class MyElementTheme {
   static readonly cssBase: CSSResult = css`
     :host {
       max-width: 1280px;
-      margin: 0 auto;
+      margin: 10% auto;
       padding: 2rem;
       text-align: center;
     }

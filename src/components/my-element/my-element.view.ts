@@ -11,9 +11,10 @@ export class MyElementView extends MyElementViewModel {
   ];
 
   protected override render(): TemplateResult {
+    import("../skills-stack/skills-stack.view");
     import("../nav-var/nav-bar.view");
+
     return html`
-      <nav-bar></nav-bar>
       <div class="card">
         <h2>Esto es un contador</h2>
         <button @click=${this.onClick} part="button">
@@ -21,6 +22,7 @@ export class MyElementView extends MyElementViewModel {
         </button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
+      <skills-stack></skills-stack>
     `;
   }
 }

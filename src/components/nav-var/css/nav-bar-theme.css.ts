@@ -2,28 +2,29 @@ import { CSSResult, CSSResultOrNative, css } from "lit";
 
 export class NavBarTheme {
   static cssBase: CSSResult = css`
-    .logo {
-      height: 6em;
-      padding: 1.5em;
-      will-change: filter;
-      transition: filter 300ms;
+    :host {
+      justify-content: end;
+      display: flex;
+      right: 6rem;
+      position: absolute;
+    }
+    
+    .nb-item-list-wrap {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      justify-content: center;
     }
 
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
+    a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.23s;
     }
 
-    .logo.lit:hover {
-      filter: drop-shadow(0 0 2em #fdfd);
-    }
-
-    @media (prefers-color-scheme: light) {
-      a:hover {
-        color: #747bff;
-      }
-      button {
-        background-color: #f9f9f9;
-      }
+    a:hover {
+      color: #147efb;
     }
   `;
 
