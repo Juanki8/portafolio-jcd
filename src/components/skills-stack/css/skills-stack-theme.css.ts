@@ -14,12 +14,20 @@ export class SkillsStackTheme {
       transition: filter 300ms;
     }
 
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
+    .logo.orange:hover {
+      filter: drop-shadow(0 0 2em #f06529);
     }
 
-    .logo.lit:hover {
-      filter: drop-shadow(0 0 2em #fdfd);
+    .logo.blue:hover {
+      filter: drop-shadow(0 0 2em #2196f3);
+    }
+
+    .logo.yellow:hover {
+      filter: drop-shadow(0 0 2em #f0db4f);
+    }
+
+    .logo.white:hover {
+      filter: drop-shadow(0 0 2em #fff);
     }
 
     @media (prefers-color-scheme: light) {

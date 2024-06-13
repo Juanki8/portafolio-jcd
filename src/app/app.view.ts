@@ -12,11 +12,11 @@ export class AppView extends AppViewModel {
 
   protected override render(): TemplateResult {
     import("../components/nav-var/nav-bar.view");
-    import("../components/my-element/my-element.view");
+    import("../components/layout/layout.view");
 
     return html`
       <nav-bar></nav-bar>
-      <my-element></my-element>
+      <layout-wrap></layout-wrap>
     `;
   }
 }
@@ -25,6 +25,6 @@ window.customElements.define("app-wrapper", AppView);
 
 declare global {
   interface HTMLElementTagNameMap {
-    app: AppView;
+    "app-wrapper": AppView;
   }
 }

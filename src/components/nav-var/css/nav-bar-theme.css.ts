@@ -3,12 +3,8 @@ import { CSSResult, CSSResultOrNative, css } from "lit";
 export class NavBarTheme {
   static cssBase: CSSResult = css`
     :host {
-      justify-content: end;
-      display: flex;
-      right: 6rem;
-      position: absolute;
     }
-    
+
     .nb-item-list-wrap {
       display: flex;
       gap: 2rem;
